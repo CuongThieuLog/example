@@ -13,7 +13,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://example-ff8d.vercel.app",
+        "APP_URL": "https://example-ruddy-five.vercel.app",
         "APP_KEY": "base64:QzcDssQpdPHopFoG+kuZDLmqA61z02bMEJ6Rg92+Mu8=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
