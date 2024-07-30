@@ -1,20 +1,27 @@
 {
     "version": 2,
-    "framework": null,
+    "regions": ["fra1"],
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.1" }
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.1"
+        }
     },
     "routes": [
+        {
+            "src": "/build/(.*)",
+            "dest": "/build/$1"
+        },
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
     ],
+    "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://example-ruddy-five.vercel.app",
-        "APP_KEY": "base64:QzcDssQpdPHopFoG+kuZDLmqA61z02bMEJ6Rg92+Mu8=",
+        "APP_KEY": "base64:26KRPmcLbFdaPE3+nQBJPVM8/XT7qb5JxFtDYfMdtFc=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
